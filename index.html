@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07060a">
+<title>Don Chaos Wallpapers</title>
+<meta name="description" content="Don Chaos – tapety do telefonu: Mýtická stvoření, Válečníci a Zvěrokruh. 10 tapet v balíčku, STATIC za $3 nebo LIVE (parallax) za $5.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap">
+<style>
+:root{--bg:#07060a;--fg:#f4efe8;--mute:#9a93a3;--line:rgba(244,239,232,.13);--ember:#ff4a1c;--gold:#ffb347;--warn:#ffb38a;
+ --display:"Unbounded","Arial Black",system-ui,sans-serif;--body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--serif:"Instrument Serif",Georgia,serif;
+ --gx:max(16px,env(safe-area-inset-left,0px));--gr:max(16px,env(safe-area-inset-right,0px));color-scheme:dark}
+*{box-sizing:border-box}
+html{overflow-x:clip;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.55 var(--body);overflow-x:clip}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:.95;letter-spacing:-.035em;text-wrap:balance}
+a{color:inherit}
+em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0;color:var(--gold)}
+.eyebrow{font:500 12px/1 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gr) 0 var(--gx)}
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(7,6,10,.7);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font:800 14px var(--display);letter-spacing:.08em}
+nav .r{display:flex;gap:18px;align-items:center;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+nav .r a{text-decoration:none}
+.lang{background:none;border:1px solid currentColor;color:inherit;border-radius:99px;padding:6px 12px;font:inherit;cursor:pointer}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(40px,8vh,90px) 0 clamp(30px,6vh,70px)}
+.hero h1{font-size:clamp(40px,7vw,96px);font-weight:800;margin:18px 0 20px}
+.hero p.lead{color:#d9d2dc;font-size:clamp(17px,1.6vw,20px);max-width:34ch;margin:0}
+.stage{display:grid;justify-items:center;gap:16px}
+.phone{position:relative;height:min(64svh,560px);aspect-ratio:9/19.5;border-radius:40px;padding:7px;background:linear-gradient(145deg,#2a2630,#0a090d);
+ box-shadow:0 40px 90px -20px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.08) inset,0 0 110px -20px rgba(255,74,28,.45);transition:transform .2s}
+.scr{position:absolute;inset:7px;border-radius:33px;overflow:hidden;background:#000}
+.scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.12);will-change:transform;user-select:none}
+.scr .clock{position:absolute;left:0;right:0;top:12%;text-align:center;z-index:1;pointer-events:none;color:rgba(255,255,255,.93);text-shadow:0 2px 20px rgba(0,0,0,.4)}
+.scr .clock b{display:block;font:300 clamp(42px,5vw,58px)/1 var(--display);letter-spacing:-.03em}
+.scr .clock span{font-size:12px;letter-spacing:.06em}
+.phone::before{content:"";position:absolute;top:18px;left:50%;width:30%;height:3%;transform:translateX(-50%);background:#000;border-radius:99px;z-index:3}
+.wm{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2}
+.wm::before{content:"DON CHAOS  DON CHAOS  DON CHAOS  DON CHAOS  DON CHAOS  DON CHAOS  DON CHAOS  DON CHAOS  DON CHAOS  DON CHAOS";position:absolute;inset:-40%;transform:rotate(-24deg);font:800 14px/3.4 var(--display);letter-spacing:.2em;word-spacing:1.4em;color:rgba(255,255,255,.13);text-align:center}
+.mode{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:4px;background:rgba(18,15,24,.7)}
+.mode button{all:unset;cursor:pointer;padding:9px 18px;border-radius:99px;font:600 12px var(--body);letter-spacing:.14em;color:var(--mute)}
+.mode button[aria-pressed=true]{background:var(--fg);color:#120c10}
+.mode button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.hint{font-size:13px;color:var(--mute);text-align:center;max-width:34ch;min-height:2.6em}
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 18px}
+.opt{border:1px solid var(--line);border-radius:24px;padding:24px;background:rgba(18,15,24,.6)}
+.opt.live{background:linear-gradient(160deg,rgba(255,74,28,.16),rgba(18,15,24,.7));border-color:rgba(255,120,60,.35)}
+.opt h3{font-size:20px;font-weight:500;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.opt h3 span{font:500 30px/1 var(--display);letter-spacing:-.04em}
+.opt p{margin:12px 0 0;color:#cfc8d2;font-size:15px}
+.req{color:var(--warn);font-size:14px;line-height:1.5;margin:0 0 8px}
+/* themes */
+.theme{padding:clamp(56px,10vh,110px) 0 0}
+.th-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+.th-head h2{font-size:clamp(32px,5.4vw,68px);font-weight:800;margin-top:12px}
+.th-head p{margin:10px 0 0;color:var(--mute);max-width:44ch}
+.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;padding:4px 0 14px;scrollbar-width:thin;scrollbar-color:#3a3440 transparent}
+.tile{flex:0 0 auto;width:clamp(118px,13vw,150px);scroll-snap-align:start;margin:0}
+.tile .ph{position:relative;aspect-ratio:4/7;border-radius:16px;overflow:hidden;background:#15121a;box-shadow:0 0 0 1px rgba(255,255,255,.07) inset}
+.tile img{width:100%;height:100%;object-fit:cover;display:block}
+.tile figcaption{font-size:12px;color:var(--mute);margin-top:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile figcaption b{color:var(--fg);font-weight:500}
+.buy{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.btn{display:flex;flex-direction:column;gap:4px;align-items:center;justify-content:center;text-align:center;padding:16px 14px;border-radius:20px;text-decoration:none;border:1px solid var(--line);transition:background .25s,color .25s,border-color .25s}
+.btn b{font:600 14px var(--body);letter-spacing:.12em;text-transform:uppercase}
+.btn small{font-size:13px;opacity:.8}
+.btn.s:hover{border-color:var(--fg)}
+.btn.l{background:var(--ember);border-color:var(--ember);color:#fff}
+.btn.l:hover{background:var(--gold);border-color:var(--gold);color:#120c10}
+.btn[aria-disabled=true]{pointer-events:none;opacity:.5}
+footer{margin-top:clamp(70px,12vh,130px);padding:40px 0 calc(40px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(min-width:900px){.strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;overflow:visible}.tile{width:auto}}
+@media(max-width:820px){
+ .hero{grid-template-columns:1fr;padding-top:32px}
+ .phone{height:min(58svh,480px)}
+ .cmp{grid-template-columns:1fr}
+}
+@media(max-width:420px){.buy{grid-template-columns:1fr 1fr;gap:8px}.btn{padding:14px 8px}.btn b{font-size:13px;letter-spacing:.08em}}
+</style></head><body>
+
+<nav><div class="wrap"><b>DON CHAOS</b><div class="r"><a href="#themes" id="navp">Témata</a><button class="lang" id="lang" type="button">EN</button></div></div></nav>
+
+<main class="wrap">
+ <section class="hero">
+  <div>
+   <div class="eyebrow" id="eyebrow"></div>
+   <h1 id="h1"></h1>
+   <p class="lead" id="lead"></p>
+  </div>
+  <div class="stage">
+   <div class="phone" id="phone" role="img">
+    <div class="scr" id="scr">
+     <img alt="" src="w/mythical/01-L0.webp" width="432" height="756" decoding="async">
+     <div class="clock"><b id="time">21:37</b><span id="date"></span></div>
+     <img alt="" src="w/mythical/01-L1.webp" width="432" height="756" decoding="async">
+     <img alt="" src="w/mythical/01-L2.webp" width="432" height="756" decoding="async">
+     <img alt="" src="w/mythical/01-L3.webp" width="432" height="756" decoding="async">
+     <img alt="" src="w/mythical/01-L4.webp" width="432" height="756" decoding="async">
+     <div class="wm"></div>
+    </div>
+   </div>
+   <div class="mode" role="group" id="mode"><button type="button" data-m="static" aria-pressed="false">STATIC</button><button type="button" data-m="live" aria-pressed="true">LIVE</button></div>
+   <div class="hint" id="hint"></div>
+  </div>
+ </section>
+
+ <div class="cmp">
+  <div class="opt"><h3><b>STATIC</b><span>$3</span></h3><p id="optS"></p></div>
+  <div class="opt live"><h3><b>LIVE</b><span>$5</span></h3><p id="optL"></p></div>
+ </div>
+ <p class="req" id="req"></p>
+
+ <div id="themes"></div>
+</main>
+
+<footer><div class="wrap"><span id="foot"></span><a href="privacy.html" id="priv">Soukromí a podmínky</a></div></footer>
+
+<script>
+const THEMES=[
+ {id:"mythical",cs:"Mýtická stvoření",en:"Mythical Creatures",dCs:"Draci, fénixové a bytosti z legend v kinematografickém světle.",dEn:"Dragons, phoenixes and creatures of legend in cinematic light.",
+  names:{cs:["Obsidiánový drak", "Fénix", "Hromový pták", "Kraken", "Wyverna na věži", "Kitsune", "Nebeská velryba", "Drak nad městem", "Mořský had", "Obří pták Rok"],en:["Obsidian Dragon", "Phoenix", "Thunderbird", "Kraken", "Wyvern on the Tower", "Kitsune", "Celestial Whale", "Dragon over the City", "Sea Serpent", "The Roc"]},
+  buy:{static:"https://buy.stripe.com/6oU9AV63b09feth5nI5AQ05",live:"https://buy.stripe.com/dRm9AV2QZ9JPad1cQa5AQ06"}},
+ {id:"warriors",cs:"Válečníci",en:"Warriors",dCs:"Samurajové, vikingové a rytíři v bouři, mlze a ohni.",dEn:"Samurai, vikings and knights in storm, mist and fire.",
+  names:{cs:["Krvavý měsíc", "Viking ve fjordu", "Bouře nad hradem", "Brána torii", "Ohnivý most", "Zasněžený chrám", "Rytíř v katedrále", "Sparťan při západu", "Keltský válečník", "Centurio u brány"],en:["Blood Moon", "Viking in the Fjord", "Storm over the Castle", "Torii Gate", "Fire Bridge", "Snowy Temple", "Knight in the Cathedral", "Spartan at Sunset", "Celtic Warrior", "Centurion at the Gate"]},
+  buy:{static:"https://buy.stripe.com/5kQ6oJ3V35tzeth7vQ5AQ07",live:"https://buy.stripe.com/4gMaEZ4Z7f492Kzg2m5AQ08"}},
+ {id:"zodiac",cs:"Zvěrokruh",en:"Zodiac",dCs:"Znamení zvěrokruhu jako živé obrazy noční oblohy.",dEn:"Zodiac signs as living paintings of the night sky.",
+  names:{cs:["Beran", "Rak", "Lev", "Váhy", "Štír", "Ryby", "Střelec", "Vodnář", "Býk", "Blíženci"],en:["Aries", "Cancer", "Leo", "Libra", "Scorpio", "Pisces", "Sagittarius", "Aquarius", "Taurus", "Gemini"]},
+  buy:{static:"https://buy.stripe.com/7sY28t9fn3lrcl9aI25AQ09",live:"https://buy.stripe.com/5kQ3cxcrz5tzfxlg2m5AQ0a"}}
+];
+const T={
+ cs:{eyebrow:"Tapety do telefonu",h1:"Tři světy. <em>Deset tapet</em> v každém.",lead:"Vyber si téma a pak, jestli chceš obrázek, nebo pohyb. Každý balíček má 10 tapet v rozlišení 1536 × 2688.",
+  hintL:"LIVE: vrstvy se posouvají, když pohneš myší nebo nakloníš telefon.",hintS:"STATIC: stejná tapeta jako klidný obrázek.",
+  optS:"10 tapet jako obrázky (JPG, 1536 × 2688). Funguje na každém telefonu.",optL:"Stejných 10 tapet + ke každé 5 vrstev hloubky. Obraz se hýbe s telefonem.",
+  req:"⚠️ Živý pohyb vrstev potřebuje novější telefon s gyroskopem a podporou živých/3D tapet. Na starších telefonech se tapeta zobrazí jen jako obyčejný obrázek.",
+  nav:"Témata",theme:"Téma",walls:"10 tapet",sS:"10 tapet",sL:"10 živých tapet",soon:"Brzy",foot:"Okamžité stažení po zaplacení · bez vodoznaku · osobní licence",priv:"Soukromí a podmínky",phone:"Ukázka živé tapety"},
+ en:{eyebrow:"Phone wallpapers",h1:"Three worlds. <em>Ten wallpapers</em> in each.",lead:"Pick a theme, then pick a still image or motion. Every pack has 10 wallpapers at 1536 × 2688.",
+  hintL:"LIVE: the layers shift when you move the mouse or tilt your phone.",hintS:"STATIC: the same wallpaper as a calm still image.",
+  optS:"10 wallpapers as images (JPG, 1536 × 2688). Works on any phone.",optL:"The same 10 wallpapers + 5 depth layers for each. The picture moves with your phone.",
+  req:"⚠️ The live layer motion needs a newer phone with a gyroscope and support for live/3D wallpapers. On older phones the wallpaper shows as a regular still image.",
+  nav:"Themes",theme:"Theme",walls:"10 wallpapers",sS:"10 wallpapers",sL:"10 live wallpapers",soon:"Soon",foot:"Instant download after payment · no watermark · personal license",priv:"Privacy & terms",phone:"Live wallpaper preview"}
+};
+let L=(navigator.language||"cs").toLowerCase().startsWith("cs")?"cs":"en";
+try{const s=localStorage.getItem("dc-lang");if(s==="cs"||s==="en")L=s}catch(e){}
+const $=s=>document.querySelector(s),pad=i=>String(i).padStart(2,"0");
+let live=true;
+function render(){
+ const t=T[L];document.documentElement.lang=L;$("#lang").textContent=L==="cs"?"EN":"CZ";
+ for(const k of ["eyebrow","h1","lead","optS","optL","req","foot","priv"])$("#"+k).innerHTML=t[k];
+ $("#navp").textContent=t.nav;$("#hint").textContent=live?t.hintL:t.hintS;$("#phone").setAttribute("aria-label",t.phone);
+ $("#themes").innerHTML=THEMES.map((p,pi)=>`<section class="theme" id="${p.id}">
+  <div class="th-head"><div><div class="eyebrow">${t.theme} 0${pi+1} · ${t.walls}</div><h2>${p[L]}</h2><p>${L=="cs"?p.dCs:p.dEn}</p></div></div>
+  <div class="strip" role="list">${p.names[L].map((nm,i)=>`<figure class="tile" role="listitem"><div class="ph"><img src="w/${p.id}/${pad(i+1)}.webp" alt="${p[L]} ${pad(i+1)}" width="300" height="525" loading="lazy" decoding="async"><div class="wm"></div></div><figcaption>${pad(i+1)} <b>${/^\d+$/.test(nm)?"":nm}</b></figcaption></figure>`).join("")}</div>
+  <div class="buy">
+   <a class="btn s" ${p.buy.static?`href="${p.buy.static}" rel="noopener"`:'aria-disabled="true"'}><b>STATIC · $3</b><small>${p.buy.static?t.sS:t.soon}</small></a>
+   <a class="btn l" ${p.buy.live?`href="${p.buy.live}" rel="noopener"`:'aria-disabled="true"'}><b>LIVE · $5</b><small>${p.buy.live?t.sL:t.soon}</small></a>
+  </div></section>`).join("");
+ clock();
+}
+function clock(){const d=new Date();$("#time").textContent=d.getHours()+":"+pad(d.getMinutes());
+ try{$("#date").textContent=d.toLocaleDateString(L==="cs"?"cs-CZ":"en-US",{weekday:"long",day:"numeric",month:"long"})}catch(e){}}
+$("#lang").onclick=()=>{L=L==="cs"?"en":"cs";try{localStorage.setItem("dc-lang",L)}catch(e){}render()};
+$("#mode").onclick=e=>{const b=e.target.closest("button");if(!b)return;live=b.dataset.m==="live";
+ $("#mode").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));$("#hint").textContent=live?T[L].hintL:T[L].hintS};
+render();setInterval(clock,30000);
+/* parallax demo: pointer, gyroscope, gentle sway otherwise */
+(()=>{const LY=[...document.querySelectorAll("#scr img")],ph=$("#phone"),F=[0,1.3,2.6,4,5.4];
+ const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+ let tx=0,ty=0,qx=0,qy=0,lastP=-1e9,gyro=null,t0=performance.now(),asked=false;
+ addEventListener("pointermove",e=>{if(e.pointerType==="touch")return;tx=Math.max(-1,Math.min(1,(e.clientX-innerWidth/2)/(innerWidth*.45)));ty=Math.max(-1,Math.min(1,(e.clientY-innerHeight/2)/(innerHeight*.5)));lastP=performance.now()},{passive:true});
+ addEventListener("deviceorientation",e=>{if(e.gamma==null||e.beta==null)return;gyro=[Math.max(-1,Math.min(1,e.gamma/25)),Math.max(-1,Math.min(1,(e.beta-45)/25))]},{passive:true});
+ ph.addEventListener("pointerdown",()=>{if(asked||!window.DeviceOrientationEvent||typeof DeviceOrientationEvent.requestPermission!=="function")return;asked=true;DeviceOrientationEvent.requestPermission().catch(()=>{})});
+ function frame(now){requestAnimationFrame(frame);if(document.hidden)return;
+  let ax=0,ay=0;const t=(now-t0)/1000;
+  if(live&&!RM){if(now-lastP<2500){ax=tx;ay=ty}else if(gyro){[ax,ay]=gyro}else{ax=Math.sin(t*.6)*.55;ay=Math.cos(t*.45)*.35}}
+  qx+=(ax-qx)*.08;qy+=(ay-qy)*.08;
+  LY.forEach((im,n)=>im.style.transform=`translate3d(${(-qx*F[n]).toFixed(2)}%,${(-qy*F[n]*.6).toFixed(2)}%,0) scale(1.12)`);
+  ph.style.transform=`perspective(1600px) rotateY(${(qx*10).toFixed(2)}deg) rotateX(${(-qy*7).toFixed(2)}deg)`}
+ requestAnimationFrame(frame)})();
+</script>
+</body></html>
