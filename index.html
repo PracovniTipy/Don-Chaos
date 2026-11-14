@@ -2,7 +2,7 @@
 <html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#07060a">
 <title>Don Chaos Wallpapers</title>
-<meta name="description" content="Don Chaos – tapety do telefonu: Mýtická stvoření, Válečníci, Válečníci II a Zvěrokruh. 10 tapet v balíčku, STATIC za $3 nebo LIVE (parallax) za $5.">
+<meta name="description" content="Don Chaos – tapety do telefonu: Mýtická stvoření, Válečníci, Válečníci II a Zvěrokruh. 10 tapet v balíčku, STATIC za $3 nebo LIVE (video tapety + parallax vrstvy) za $5.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap">
 <style>
@@ -117,6 +117,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </main>
 
 <footer><div class="wrap"><span id="foot"></span><a href="privacy.html" id="priv">Soukromí a podmínky</a></div></footer>
+<script>
+(function(){function L(){return (window.T&&window.L&&T[L])||null}
+var box=document.createElement("label");box.id="agreeBox";box.style.cssText="display:flex;gap:10px;align-items:flex-start;max-width:640px;margin:18px auto 0;padding:12px 14px;border:1px solid rgba(255,255,255,.15);border-radius:12px;font-size:14px;line-height:1.45;background:rgba(255,255,255,.04)";
+box.innerHTML='<input type="checkbox" id="agree" style="margin-top:3px;width:18px;height:18px;flex:none"><span id="agreeTxt"></span>';
+var AG={cs:["Souhlasím s <a href=\"privacy.html\">obchodními podmínkami</a> a žádám o okamžité dodání digitálního obsahu; beru na vědomí, že tím ztrácím právo odstoupit do 14 dnů.","Nejdřív zaškrtni souhlas s podmínkami."],en:["I agree to the <a href=\"privacy.html\">terms of sale</a> and request immediate delivery of the digital content; I acknowledge I thereby lose my 14-day right of withdrawal.","Please tick the terms box first."]};function lg(){return (document.documentElement.lang||"en").slice(0,2)==="cs"?"cs":"en"}
+function txt(){document.getElementById("agreeTxt").innerHTML=AG[lg()][0];}
+function place(){var b=document.querySelector(".btn.s,.btn.l");if(!b)return setTimeout(place,300);var th=b.closest("section,article,.th")||b.parentElement;if(!document.getElementById("agreeBox"))th.parentElement.insertBefore(box,th);txt();}
+place();setInterval(txt,1500);
+document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a.btn[href*=\"buy.stripe.com\"]");if(!a)return;var c=document.getElementById("agree");if(c&&!c.checked){e.preventDefault();alert(AG[lg()][1]);box.style.borderColor="#ff7a45";c.focus();}},true);
+})();
+</script>
 
 <script>
 const THEMES=[
@@ -135,15 +146,15 @@ const THEMES=[
 ];
 const T={
  cs:{eyebrow:"Tapety do telefonu",h1:"Čtyři světy. <em>Deset tapet</em> v každém.",lead:"Vyber si téma a pak, jestli chceš obrázek, nebo pohyb. Každý balíček má 10 tapet v rozlišení 1536 × 2688.",
-  hintL:"LIVE: vrstvy se posouvají, když pohneš myší nebo nakloníš telefon.",hintS:"STATIC: stejná tapeta jako klidný obrázek.",
-  optS:"10 tapet jako obrázky (JPG, 1536 × 2688). Funguje na každém telefonu.",optL:"Stejných 10 tapet + ke každé 5 vrstev hloubky. Obraz se hýbe s telefonem.",
-  req:"⚠️ Živý pohyb vrstev potřebuje novější telefon s gyroskopem a podporou živých/3D tapet. Na starších telefonech se tapeta zobrazí jen jako obyčejný obrázek.",
-  nav:"Témata",theme:"Téma",walls:"10 tapet",sS:"10 tapet",sL:"10 živých tapet",soon:"Brzy",foot:"Okamžité stažení po zaplacení · bez vodoznaku · osobní licence",priv:"Soukromí a podmínky",phone:"Ukázka živé tapety"},
+  hintL:"Ukázka LIVE efektu: na webu se vrstvy posouvají myší nebo náklonem. V telefonu se pohyb liší podle zařízení a aplikace.",hintS:"STATIC: stejná tapeta jako klidný obrázek.",
+  optS:"10 tapet jako obrázky (JPG, 1536 × 2688). Funguje na každém telefonu.",optL:"Stejných 10 tapet + 10 video tapet (MP4 smyčka) + ke každé 5 vrstev hloubky pro parallax aplikace.",
+  req:"⚠️ LIVE balíček = 10 tapet jako video (MP4, 6 s smyčka) + 10 obrázků + parallax vrstvy. Android: nastavíš jako video tapetu (např. Samsung, jinak aplikace zdarma). iPhone: MP4 je potřeba převést na Live Photo (aplikace zdarma, např. intoLive); pohyb se přehraje podle verze iOS. Pohyb při náklonu jako v ukázce funguje jen v parallax aplikacích (např. KLWP na Androidu). Na starších telefonech se tapeta zobrazí jako obyčejný obrázek.",
+  nav:"Témata",theme:"Téma",walls:"10 tapet",sS:"10 tapet",sL:"10 video tapet + vrstvy",soon:"Brzy",foot:"Okamžité stažení po zaplacení · bez vodoznaku · osobní licence",priv:"Obchodní podmínky a soukromí",agree:"Souhlasím s <a href=\"privacy.html\">obchodními podmínkami</a> a žádám o okamžité dodání digitálního obsahu; beru na vědomí, že tím ztrácím právo odstoupit do 14 dnů.",agreeErr:"Nejdřív zaškrtni souhlas s podmínkami.",phone:"Ukázka efektu (orientační)"},
  en:{eyebrow:"Phone wallpapers",h1:"Four worlds. <em>Ten wallpapers</em> in each.",lead:"Pick a theme, then pick a still image or motion. Every pack has 10 wallpapers at 1536 × 2688.",
-  hintL:"LIVE: the layers shift when you move the mouse or tilt your phone.",hintS:"STATIC: the same wallpaper as a calm still image.",
-  optS:"10 wallpapers as images (JPG, 1536 × 2688). Works on any phone.",optL:"The same 10 wallpapers + 5 depth layers for each. The picture moves with your phone.",
-  req:"⚠️ The live layer motion needs a newer phone with a gyroscope and support for live/3D wallpapers. On older phones the wallpaper shows as a regular still image.",
-  nav:"Themes",theme:"Theme",walls:"10 wallpapers",sS:"10 wallpapers",sL:"10 live wallpapers",soon:"Soon",foot:"Instant download after payment · no watermark · personal license",priv:"Privacy & terms",phone:"Live wallpaper preview"}
+  hintL:"LIVE effect preview: on the web the layers move with your mouse or tilt. On your phone the motion depends on the device and app.",hintS:"STATIC: the same wallpaper as a calm still image.",
+  optS:"10 wallpapers as images (JPG, 1536 × 2688). Works on any phone.",optL:"The same 10 wallpapers + 10 video wallpapers (MP4 loop) + 5 depth layers each for parallax apps.",
+  req:"⚠️ LIVE pack = 10 wallpapers as video (MP4, 6 s loop) + 10 images + parallax layers. Android: set as a video wallpaper (e.g. Samsung, or a free app). iPhone: convert the MP4 to a Live Photo (free app, e.g. intoLive); playback depends on your iOS version. Tilt motion like in the preview works only in parallax apps (e.g. KLWP on Android). On older phones the wallpaper shows as a regular still image.",
+  nav:"Themes",theme:"Theme",walls:"10 wallpapers",sS:"10 wallpapers",sL:"10 video wallpapers + layers",soon:"Soon",foot:"Instant download after payment · no watermark · personal license",priv:"Terms & privacy",agree:"I agree to the <a href=\"privacy.html\">terms of sale</a> and request immediate delivery of the digital content; I acknowledge I thereby lose my 14-day right of withdrawal.",agreeErr:"Please tick the terms box first.",phone:"Effect preview (illustrative)"}
 };
 let L=(navigator.language||"cs").toLowerCase().startsWith("cs")?"cs":"en";
 try{const s=localStorage.getItem("dc-lang");if(s==="cs"||s==="en")L=s}catch(e){}
